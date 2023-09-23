@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IEMATICS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"
+    />
+    <style>
+      :focus:not(.focus-visible) {
+        outline: none;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Roboto, sans-serif;
+        color: #333; /* Text color */
+      }
+
+      /* New CSS for the horizontal menu bar */
+      .menu-bar {
+        background-color: #333; /* Background color for the menu bar */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle elevation */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100; /* Ensure menu bar is above other content */
+      }
+      .logo-bar {
+        background-color: #333; /* Background color for the menu bar */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 5px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        z-index: 100; /* Ensure menu bar is above other content */
+      }
+      .logo-bar2 {
+        background-color: #333; /* Background color for the menu bar */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 5px;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        right: 0;
+        z-index: 150; /* Ensure menu bar is above other content */
+      }
+
+      .menu-bar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .menu-bar li {
+        margin-right: 20px;
+      }
+
+      .menu-bar a {
+        text-decoration: none;
+        color: #fff; /* Menu item text color */
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+      }
+
+      .menu-bar a:hover {
+        background-color: #ff5733; /* Hover background color for menu items */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Hover box shadow */
+        color: #fff; /* Hover color for menu items */
+      }
+
+      /* Styles for the logo container */
+      img {
+        max-width: 10vw;
+        /* Adjust the max width of logos as needed */
+        margin-right: 20px; /* Adjust the margin between logos as needed */
+      }
+
+      /* Styles for the information containers */
+      .info-container {
+        background-color: #f8f8f8; /* Background color for information containers */
+        padding-top: 40vh;
+        text-align: center;
+
+        margin-top: 10vh; /* Adjust the margin to push content below the fixed menu and logo container */
+      }
+
+      .organizer-card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .organizer-card img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      body {
+        margin-top: 20px;
+      }
+
+      /* CSS for the mobile menu button */
+
+      .register {
+        display: none;
+        animation: flash 2s infinite;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        z-index: 6;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        bottom: 20px;
+        right: 45vw;
+        position: fixed;
+      }
+
+      @keyframes flash {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      /* Media query to show/hide the mobile menu button and menu */
+      @media screen and (max-width: 768px) {
+        .info-container {
+          padding-top: 50px;
+        }
+        .logo-bar {
+          top: 0;
+        }
+        .menu-bar ul {
+          display: none; /* Hide the desktop menu on mobile */
+        }
+
+        .register {
+          display: block;
+        }
+        /* Hide the mobile menu button when the menu is open */
+
+        .menu-bar {
+          padding: 10px;
+        }
+
+        .menu-bar ul {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .logo-bar2 {
+          top: 10vh;
+        }
+
+        .menu-bar li {
+          margin: 10px 0;
+        }
+
+        /* Adjust the margin for the information containers on mobile */
+        .info-container {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Horizontal Menu Bar -->
+    <div class="menu-bar">
+      <ul>
+        <li><a href="#about">Home</a></li>
+        <li><a href="#rules">Rules</a></li>
+        <li><a href="#team">Team</a></li>
+        <li>
+          <a
+            href="https://www.codechef.com/assess/MATH2023"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Register</a
+          >
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="logo-bar">
+      <img src="logo.png" alt="Logo 2" />
+      <img src="logo7.png" alt="Logo 5" />
+      <img src="download.png" alt="Logo 1" />
+    </div>
+    <br />
+
+    <div class="logo-bar2">
+      <img src="sds.png" alt="Logo 5" />
+
+      <img src="logo4.png" alt="Logo 3" />
+      <img src="logo6.png" alt="Logo 4" />
+    </div>
+
+    <a
+      class="register"
+      href="https://www.codechef.com/assess/MATH2023"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Register</a
+    >
+    <div class="info-container" id="about">
+      <h1>About us</h1>
+      <p>
+        IEMATICS is an online International Mathematics Olympiad organised in
+        this year for the fourth time with pomp and splendour by the Society for
+        Makers, Artists, Researchers and Technologists, (SMART), USA which is
+        sponsored by Institute of Engineering & Management (IEM) in association
+        with Society for Data Science(S4DS) student chapter,IEM ,Kolkata and
+        Codechef. This Olympiad aims at developing technological and
+        mathematical skills among tech-learners and other students of 10+2 and
+        above. This competition is organised to put more emphasis on
+        mathematical skills and its application rather than mere theory.
+      </p>
+      <p>
+        Date of event: 24th October, 2021<br />
+        The competition will start from 06:00 pm IST on 24th October 2021 and
+        will continue till 10:00 pm IST on 24th October 2021.
+      </p>
+    </div>
+    <div class="info-container" id="rules">
+      <h2>Rules And Regulation:</h2>
+      <br />
+      <br />
+      <p>
+        🟢There will be 6 questions with increasing difficulty.<br />
+        🟢All answers should be in integers.<br />
+        🟢Total 3 attempts to answer any question. <br />🟢Participants will be
+        ranked as per the consumption of time to solve a problem.<br />
+        🟢Top 10% of the ranked candidates or the number of contestants who
+        solve all the questions (whichever is higher) will be given certificate
+        of merit.<br />
+        🟢The mode of this exam will be online through Codechef
+        <br />🟢Registration fees :Free<br />
+        🟢Syllabi:10+2 level precollege mathematics. <br />🟢Duration:4 hours
+        open challenge. <br />🟢Prize money worth $150 for topper,<br />
+        🟢$100 for 2nd ranker & $50 for the 3rd ranker along with certificate of
+        excellence.
+      </p>
+    </div>
+
+    <div class="info-container" id="team">
+      <div class="organizer-card">
+        <h3>
+          Prof.Biswadip Basu Mallik<br />
+          Head Organizer
+        </h3>
+        <p>Contact:+919830419204</p>
+        <p>
+          Affiliation: Institute of Engineering & Management<br />
+          Department of Mathematics<br />
+          Organising Team
+        </p>
+      </div>
+
+      <div class="organizer-card">
+        <h3>
+          Prof. Santanu Das<br />
+          Head Organiser
+        </h3>
+        <p>Contact: +918296681244</p>
+        <p>
+          Affiliation: Institute of Engineering & Management Department of
+          Mathematics Organising Team
+        </p>
+      </div>
+
+      <div class="organizer-card">
+        <h3>
+          Roshan Rateria<br />
+          Full Stack Developer
+        </h3>
+        <p>Contact: +919874017285</p>
+      </div>
+    </div>
+    <div class="info-container" id="contact">
+      <h2>Contact Information:</h2>
+      <br />
+      <address>
+        Society for Makers, Artists, Researchers and Technologists, USA<br />
+        6408 Elizabeth Avenue SE, Auburn, Washington 98092<br />
+        +919830419204<br />
+        +919748610898<br />
+        +91950458498<br />
+        +919836174079<br />
+        <br />
+        <a href="mailto:iematics2018@gmail.com">iematics2018@gmail.com</a><br />
+        <a href="mailto:biswadip.basumallik@iemcal.com"
+          >biswadip.basumallik@iemcal.com</a
+        ><br />
+        <a href="mailto:santanu.das@iemcal.com">santanu.das@iemcal.com</a><br />
+      </address>
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+      function toggleMobileMenu() {
+        const mobileMenu = document.querySelector(".mobile-menu");
+        mobileMenu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
