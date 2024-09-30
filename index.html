@@ -29,7 +29,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
+        padding: 20px 30px;
         position: fixed;
         top: 0;
         left: 0;
@@ -43,7 +43,7 @@
         align-items: center;
         padding: 5px 5px;
         position: absolute;
-        top: 40px;
+        top: 60px;
         left: 0;
         right: 0;
         z-index: 100; /* Ensure menu bar is above other content */
@@ -55,9 +55,10 @@
         align-items: center;
         padding: 5px 5px;
         position: absolute;
-        top: 20vh;
+        top: 34vh;
         left: 0;
         right: 0;
+        bottom: 45vh;
         z-index: 150; /* Ensure menu bar is above other content */
       }
 
@@ -197,29 +198,30 @@
         <li><a href="#about">Home</a></li>
         <li><a href="#rules">Rules</a></li>
         <li><a href="#team">Team</a></li>
-        <li>
-          <a
-            href="https://www.codechef.com/assess/MATH2023"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Register</a
-          >
-        </li>
+        <li class="nav-item">
+              <a class="nav-link active" href="https://www.codechef.com/assess/MATH2023"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Contest link</a>
+            </li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="logo-bar">
-      <img src="logo.png" alt="Logo 2" />
-      <img src="logo.png" alt="Logo 2" />
-      <img src="download.png" alt="Logo 1" />
+      <img src="logo.png" alt="Logo 2"
+      style=" max-height:170px; float:left ; max-width:170px; position:static;border-radius: 5px;width:100%; height:auto"/>
+      <img src="logo4.png" alt="Logo 2"
+      style=" max-height:170px; display: block; margin-left: auto; margin-right: auto; max-width:200px; position:static;border-radius: 5px;width:100%;height:auto"/>
+      <img src="download.png" alt="Logo 1"
+       style=" max-height:180px; float:right; max-width:180px; position:static;border-radius: 5px;width:100%;height:auto"/>
     </div>
     <br />
 
     <div class="logo-bar2">
-      <img src="sds.png" alt="Logo 5" />
-
-      <img src="logo4.png" alt="Logo 3" />
-      <img src="logo6.png" alt="Logo 4" />
+      <img src="logo7.png" alt="Logo 5"
+      style=" max-height:100px; max-width:100px ;float:left; position:static;border-radius: 5px;width:100%;height:auto "/>
+      <img src="sds.png" alt="Logo 4"
+      style=" max-height:100px; max-width:100px; float:right; position:static;border-radius: 5px;width:100%;height:auto;"/>
     </div>
 
     <a
@@ -229,6 +231,9 @@
       rel="noopener noreferrer"
       >Register</a
     >
+</br>
+</br>
+</br>
     <div class="info-container" id="about">
       <h1>About us</h1>
       <p>
@@ -270,9 +275,12 @@
     </div>
 
     <div class="info-container" id="team">
+      <h2 align="center"><u>Organizing team</u></h2>
       <div class="organizer-card">
+        <img src="bbm.png"
+         style=" display: block; margin-left: auto; margin-right: auto; height: 300px; width: 300px"/>
         <h3>
-          Prof.Biswadip Basu Mallik<br />
+          Prof. Biswadip Basu Mallik<br />
           Head Organizer
         </h3>
         <p>Contact:+919830419204</p>
@@ -284,27 +292,35 @@
       </div>
 
       <div class="organizer-card">
+        <img src="snd.png"
+         style=" display: block; margin-left: auto; margin-right: auto; height: 300px; width: 300px"/>
         <h3>
           Prof. Santanu Das<br />
           Head Organiser
         </h3>
         <p>Contact: +918296681244</p>
         <p>
-          Affiliation: Institute of Engineering & Management Department of
-          Mathematics Organising Team
+          Affiliation: Institute of Engineering & Management</br>
+          Department of Mathematics</br>
+          Organising Team
         </p>
       </div>
 
       <div class="organizer-card">
+        <img src="sd.png"
+         style=" display: block; margin-left: auto; margin-right: auto; height: 400px; width: 300px"/>
         <h3>
-          Roshan Rateria<br />
-          Full Stack Developer
+          Prof. Dr. Satavisha Dey</br>
+          Head Organiser
         </h3>
-        <p>Contact: +919874017285</p>
+        <p>Contact: +918777257036</p>
+        <p>Affiliation: Institute of Engineering & Management</br>
+          Department of Mathematics</br>
+          Organising Team</p>
       </div>
     </div>
     <div class="info-container" id="contact">
-      <h2>Contact Information:</h2>
+      <h2 align="center"><u>Contact Information:</u></h2>
       <br />
       <address>
         Society for Makers, Artists, Researchers and Technologists, USA<br />
@@ -324,8 +340,19 @@
       <br />
       <br />
       <br />
+      <h2 align="center"><u>Volunteer:</u></h2>
+      <h3>Soumi Sarkar</h3>
+    </div>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+    <div class="footer" align="center">
+      <footer> Copyright © 2024 All rights reserved | Made With Thought and HTML</footer>
     </div>
     <!-- JavaScript to toggle the mobile menu -->
+
     <script>
       function toggleMobileMenu() {
         const mobileMenu = document.querySelector(".mobile-menu");
